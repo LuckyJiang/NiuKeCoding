@@ -5,16 +5,5 @@ images/
 dist/
 node_modules/
 .idea
-*.iml
 test.js
 test.js.map
-vendors.js
-vendors.js.map
-index.html
-checkstyle.html
-/pidfiles/
-!/pidfiles/red.dwg
-!/pidfiles/yellow.dwg
-!/pidfiles/green.dwg
-application.yml
-

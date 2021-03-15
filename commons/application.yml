@@ -1,0 +1,33 @@
+server:
+  port: 6060
+
+spring:
+  #配置文件激活环境使用的 service ，根据配置自动注入对应bean。目前支持两种： data/aims100
+  profiles:
+    active: aims070
+
+aims:
+  model:
+    #表示位号的属性定义名称
+    tagNumPropertyName : Name
+    #连接符--对应的分类名称
+    branchPointCategory: PIDBranchPoint
+    blindProperty:
+      #允许添加盲板的设备类型(法兰、法兰阀门、管线)
+      categoriesOfAddBlind: PIDPipingConnector,PIDPipingComponent
+      #模型中盲板的分类名称
+      blindCategory: PIDPipingComponent
+      #模型中管线的分类名称
+      pipeCategory: PIDPipingConnector
+      #盲板所在管线的管线名称
+      pipeName: Name
+      #盲板所在管线的介质名称
+      mediaName: SNECSPPIDFluidNameChs
+      #盲板所在管线的管线的公称直径
+      nominalDiameter: Nominal diameter
+      #盲板所在管线的操作压力
+      pressure: 操作压力
+      #盲板厚度
+      thickness: 厚度
+
+
